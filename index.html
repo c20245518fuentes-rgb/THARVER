@@ -5,56 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-     <h1 class="text-3xl font-bold underline text-red-700">
-      Tharver
-    </h1>
-    <button id="switch">Switch</button>
+     <h1 class="text-center text-3xl font-bold text-red-700">Tharver</h1>
+    <button class="hover:bg-sky-900 ... rounded-sm mx-auto block">Switch</button>
     <header>
         <nav>
-            <span>@hxsdmark</span>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+            <span>@Tharver</span>
+            <ul class="flex gap-6">
+                <li><a href="#projects" class="text-purple-500 hover:text-red-700 transition-colors duration-500">Projects</a>
+                <li><a href="#services" class="text-purple-500 hover:text-red-700 transition-colors duration-500">Services</a>
+                <li><a href="#contact"  class="text-purple-500 hover:text-red-700 transition-colors duration-500">Contact Me</a>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="projects"> 
-            <h2 class="projects">My Projects</h2>
-            <p>Personal portfolio, payroll system, company website, startup website, and compliance monitoring system.
+    <main class="m-[50px] flex flex-wrap gap-[30px] p-[50px]">
+        <section class="min-w-[280px] flex-1 border-2 border-black mt-4 rounded-sm ">
+            <h2  class="text-3xl font-bold text-red-700">My Projects</h2>
+
+            <p class="text-base text-black-800"> Personal portfolio, payroll system, company website, startup website, and compliance monitoring system.</p>
+            </div>
+        </section>
+
+        <section class="min-w-[280px] flex-1 border-2 border-black mt-4 rounded-sm">
+            <h2  class="text-3xl font-bold text-red-700">My Services</h2>
+
+            <p class="text-base text-black-800">Website Creation, System Creation, AI Automation, Database Management, Project Management, SystemsAnalyst
             </p>
+            </div>
         </section>
 
-        <section id="services">
-            <h2 class="services">My Services</h2>
-            <p>Website Creation, System Creation, AI Automation, Database Management, Project Management, Systems
-                Analyst</p>
-        </section>
-
-        <section id="contact">
+        <section class="min-w-[280px] flex-1 border-2 mt-4 rounded-sm">
             <h2 class="contact">Let's build together!</h2>
             <form action="#">
                 <!-- Name -->
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required class="w-medium border rounded black text-black">
 
                 <!-- Email -->
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required class="w-medium border rounded black text-black">
 
                 <!-- Message -->
                 <label for="message">Message</label>
-                <textarea name="message" id="message" rows="5" required></textarea>
+                <textarea name="message" id="message" rows="5" required  class="w-medium border rounded black text-black"></textarea>
 
                 <!-- Submit -->
-                <button type="submit">Send Message</button>
+              <button class="bg-black-500 hover:bg-gray-600 focus:outline-2 focus:outline-offset-2 ">
+                Send Message
+              </button>
             </form>
         </section>
     </main>
