@@ -64,11 +64,12 @@ form {
         min-width: 0;
         padding: 15px;
     }
-
+    
     h1 {
         font-size: 100px;
         color: red;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -102,10 +103,6 @@ button:hover {
 
 h2 {
     color: hotpink;
-}
-
-h1 {
-    color: green;
 }
 
 #projects {
