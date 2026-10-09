@@ -1,57 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en" class="dark">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
 
-<body>
-     <h1 class="text-center text-3xl font-bold text-red-700">Tharver</h1>
-    <button class="hover:bg-sky-900 ... rounded-sm mx-auto block">Switch</button>
+    <style type="text/tailwindcss">
+      @custom-variant dark (&:where(.dark, .dark *));
+    </style>
+  </head>
+  
+  <body class="bg-white text-slate-900 dark:bg-slate-900 dark:text-white">
+    <h1 class="text-center text-3xl font-bold text-pink-700">Tharver</h1>
+    <button id="toggle-dark" type="button" class="mx-auto my-4 block rounded-sm border border-slate-400 px-4 py-2 dark:border-slate-700 dark:bg-slate-800 dark:text-white" >
+      Switch
+    </button>
     <header>
-        <nav>
-            <span>@Tharver</span>
-            <ul class="flex gap-6">
-                <li><a href="#projects" class="text-purple-500 hover:text-red-700 transition-colors duration-500">Projects</a>
-                <li><a href="#services" class="text-purple-500 hover:text-red-700 transition-colors duration-500">Services</a>
-                <li><a href="#contact"  class="text-purple-500 hover:text-red-700 transition-colors duration-500">Contact Me</a>
-            </ul>
+        <nav class="flex flex-col items-start gap-3 px-4 sm:flex-row sm:items-center">
+          <span>@Tharver</span>
+          <ul class="flex w-full flex-wrap gap-x-4 gap-y-2 sm:ml-auto sm:w-auto sm:flex-nowrap sm:gap-6">
+            <li><a href="#projects" class="text-purple-500 hover:text-red-700 transition-colors duration-500">Projects</a></li>
+            <li><a href="#services" class="text-purple-500 hover:text-red-700 transition-colors duration-500">Services</a></li>
+            <li><a href="#contact" class="text-purple-500 hover:text-red-700 transition-colors duration-500">Contact Me</a></li>
+          </ul>
         </nav>
     </header>
 
-    <main class="m-[50px] flex flex-wrap gap-[30px] p-[50px]">
-        <section class="min-w-[280px] flex-1 border-2 border-black mt-4 rounded-sm ">
-            <h2  class="text-3xl font-bold text-red-700">My Projects</h2>
+    <main class="mx-4 my-8 grid auto-rows-fr grid-cols-1 gap-6 p-4 sm:m-[50px] sm:gap-[30px] sm:p-[50px] lg:grid-cols-2 xl:grid-cols-3">
+      <section class="min-w-0 rounded-sm border-2 border-gray-300 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
+            <h2  class="text-3xl font-bold text-pink-700">My Projects</h2>
 
             <p class="text-base text-black-800"> Personal portfolio, payroll system, company website, startup website, and compliance monitoring system.</p>
             </div>
         </section>
 
-        <section class="min-w-[280px] flex-1 border-2 border-black mt-4 rounded-sm">
-            <h2  class="text-3xl font-bold text-red-700">My Services</h2>
-
-            <p class="text-base text-black-800">Website Creation, System Creation, AI Automation, Database Management, Project Management, SystemsAnalyst
-            </p>
-            </div>
+        <section id="services" class="min-w-0 rounded-sm border-2 border-gray-300 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
+          <h2 class="text-3xl font-bold text-pink-700">Services</h2>
+          <p class="text-base text-slate-900 dark:text-white">
+            Website Creation, System Creation, AI Automation, Database Management, Project Management, Systems Analyst.
+          </p>
         </section>
 
-        <section class="min-w-[280px] flex-1 border-2 mt-4 rounded-sm">
-            <h2 class="contact">Let's build together!</h2>
+        <section id="contact" class="min-w-0 rounded-sm border-2 border-gray-300 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
+            <h2 class="text-3xl font-bold text-pink-700">Let's build together!</h2>
             <form action="#">
                 <!-- Name -->
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required class="w-medium border rounded black text-black">
+                <input type="text" id="name" name="name" required class="w-full border rounded black text-black">
 
                 <!-- Email -->
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" required class="w-medium border rounded black text-black">
+                <input type="email" name="email" id="email" required class="w-full border rounded black text-black">
 
                 <!-- Message -->
                 <label for="message">Message</label>
-                <textarea name="message" id="message" rows="5" required  class="w-medium border rounded black text-black"></textarea>
+                <textarea name="message" id="message" rows="5" required  class="w-full border rounded black text-black"></textarea>
 
                 <!-- Submit -->
               <button class="bg-black-500 hover:bg-gray-600 focus:outline-2 focus:outline-offset-2 ">
@@ -61,7 +65,12 @@
         </section>
     </main>
 
-    <!-- <script src="script.js"></script> -->
-</body>
+    <script>
+      const button = document.querySelector("#toggle-dark");
+      button.addEventListener("click", function () {
+        document.querySelector("html").classList.toggle("dark");
+      });
+    </script>
+  </body>
 
 </html>
