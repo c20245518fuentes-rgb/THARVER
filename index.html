@@ -7,38 +7,46 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
-        --color-ivory: #F4F0EA;
+        --color-ivory: #F5F2EE;
       }
 
       @custom-variant dark (&:where(.dark, .dark *));
 
       @layer components {
         .btn-primary {
-          @apply inline-flex items-center justify-center rounded-full bg-[#8C3540] px-6 py-3 font-bold text-ivory shadow-[inset_2px_2px_5px_rgba(255,255,255,0.18),7px_9px_18px_rgba(92,35,43,0.22)] transition duration-300 hover:-translate-y-1 hover:bg-[#742D37] hover:text-ivory active:translate-y-0 active:shadow-[inset_4px_4px_8px_rgba(92,35,43,0.28)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E9B949] motion-reduce:transition-none;
+          @apply inline-flex items-center justify-center rounded-full bg-[#5E2A35] px-6 py-3 font-bold text-ivory shadow-[inset_2px_2px_5px_rgba(255,255,255,0.18),7px_9px_18px_rgba(62,28,31,0.22)] transition duration-300 hover:-translate-y-1 hover:bg-[#4C212B] hover:text-ivory active:translate-y-0 active:shadow-[inset_4px_4px_8px_rgba(46,24,29,0.28)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#CBA45A] motion-reduce:transition-none;
         }
 
         .btn-accent {
-          @apply inline-flex items-center justify-center rounded-full border border-[#E9B949] bg-[#E9B949] px-6 py-3 font-bold text-[#8C3540] shadow-[inset_3px_3px_7px_rgba(255,255,255,0.48),7px_8px_16px_rgba(92,35,43,0.16)] transition duration-300 hover:-translate-y-1 hover:bg-[#F0C963] active:translate-y-0 active:shadow-[inset_4px_4px_8px_rgba(140,53,64,0.16)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E9B949] motion-reduce:transition-none;
+          @apply inline-flex items-center justify-center rounded-full border border-[#CBA45A] bg-[#CBA45A] px-6 py-3 font-bold text-[#2F2A2B] shadow-[inset_3px_3px_7px_rgba(255,255,255,0.42),7px_8px_16px_rgba(46,32,19,0.16)] transition duration-300 hover:-translate-y-1 hover:bg-[#D2AE61] active:translate-y-0 active:shadow-[inset_4px_4px_8px_rgba(46,35,21,0.16)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#CBA45A] motion-reduce:transition-none;
         }
 
         .btn-soft {
-          @apply inline-flex items-center justify-center rounded-full border border-[#E5DED4] bg-ivory px-6 py-3 font-bold text-[#8C3540] shadow-[inset_5px_5px_10px_rgba(140,53,64,0.08),inset_-4px_-4px_9px_rgba(255,255,255,0.85),6px_7px_15px_rgba(140,53,64,0.12)] transition duration-300 hover:-translate-y-1 hover:border-[#E9B949] hover:text-[#8C3540] active:translate-y-0 active:shadow-[inset_4px_4px_8px_rgba(140,53,64,0.12)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#E9B949] motion-reduce:transition-none dark:border-[#8C3540] dark:bg-[#8C3540] dark:text-ivory;
+          @apply inline-flex items-center justify-center rounded-full border border-[#E9E2DB] bg-ivory px-6 py-3 font-bold text-[#5E2A35] shadow-[inset_5px_5px_10px_rgba(46,35,21,0.04),inset_-4px_-4px_9px_rgba(255,255,255,0.85),6px_7px_15px_rgba(46,35,21,0.08)] transition duration-300 hover:-translate-y-1 hover:border-[#CBA45A] hover:text-[#4C212B] active:translate-y-0 active:shadow-[inset_4px_4px_8px_rgba(46,35,21,0.08)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#CBA45A] motion-reduce:transition-none dark:border-[#5E2A35] dark:bg-[#5E2A35] dark:text-ivory;
         }
 
         .nav-link {
-          @apply inline-flex rounded-full px-3 py-2 transition-colors duration-200 hover:bg-[#8C3540]/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E9B949] dark:hover:bg-ivory/10 motion-reduce:transition-none;
+          @apply inline-flex rounded-full px-3 py-2 transition-colors duration-200 hover:bg-[#5E2A35]/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CBA45A] dark:hover:bg-ivory/10 motion-reduce:transition-none;
         }
 
         .neu-card {
-          @apply relative min-w-0 overflow-hidden rounded-[2rem] border border-white/80 bg-ivory p-7 text-[#8C3540] shadow-[inset_2px_2px_5px_rgba(255,255,255,0.9),12px_14px_24px_rgba(140,53,64,0.14),-7px_-7px_18px_rgba(255,255,255,0.8)] transition duration-300 hover:-translate-y-1 hover:shadow-[inset_2px_2px_5px_rgba(255,255,255,0.95),16px_18px_30px_rgba(140,53,64,0.18),-7px_-7px_18px_rgba(255,255,255,0.85)] dark:border-[#A64B56] dark:bg-[#8C3540] dark:text-ivory;
+          @apply relative min-w-0 overflow-hidden rounded-[2rem] border border-white/80 bg-ivory p-7 text-[#5E2A35] shadow-[inset_2px_2px_5px_rgba(255,255,255,0.9),12px_14px_24px_rgba(31,26,28,0.08),-7px_-7px_18px_rgba(255,255,255,0.8)] transition duration-300 hover:-translate-y-1 hover:shadow-[inset_2px_2px_5px_rgba(255,255,255,0.95),16px_18px_30px_rgba(31,26,28,0.12),-7px_-7px_18px_rgba(255,255,255,0.85)] dark:border-[#7B4B54] dark:bg-[#5E2A35] dark:text-ivory;
         }
 
         .neu-detail {
-          @apply rounded-2xl border border-[#E5DED4] bg-ivory p-4 shadow-[inset_4px_4px_9px_rgba(140,53,64,0.08),inset_-4px_-4px_9px_rgba(255,255,255,0.85)] dark:border-[#A64B56] dark:bg-[#742D37];
+          @apply rounded-2xl border border-[#E5DED4] bg-ivory p-4 shadow-[inset_4px_4px_9px_rgba(46,35,21,0.04),inset_-4px_-4px_9px_rgba(255,255,255,0.85)] dark:border-[#7B4B54] dark:bg-[#462130];
         }
 
         .neu-field {
-          @apply w-full rounded-2xl border border-[#E5DED4] bg-ivory px-4 py-3 text-[#8C3540] shadow-[inset_5px_5px_10px_rgba(140,53,64,0.1),inset_-4px_-4px_9px_rgba(255,255,255,0.9)] outline-none transition focus:border-[#8C3540] focus:ring-2 focus:ring-[#8C3540]/20 dark:border-[#A64B56] dark:bg-[#742D37] dark:text-ivory;
+          @apply w-full rounded-2xl border border-[#E5DED4] bg-ivory px-4 py-3 text-[#5E2A35] shadow-[inset_5px_5px_10px_rgba(46,35,21,0.04),inset_-4px_-4px_9px_rgba(255,255,255,0.9)] outline-none transition focus:border-[#5E2A35] focus:ring-2 focus:ring-[#5E2A35]/15 dark:border-[#7B4B54] dark:bg-[#462130] dark:text-ivory;
+        }
+
+        .soft-divider {
+          @apply border-t border-[#5E2A35]/10 dark:border-ivory/10;
+        }
+
+        .info-pill {
+          @apply inline-flex items-center rounded-full border border-[#CBA45A]/70 bg-[#CBA45A]/12 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[#5E2A35] dark:text-ivory;
         }
 
         .neu-card h2,
@@ -54,7 +62,7 @@
       }
     </style>
   </head>
-  <body class="min-h-screen bg-ivory text-[#8C3540] antialiased dark:bg-[#742D37] dark:text-ivory">
+  <body class="min-h-screen bg-[radial-gradient(circle_at_top,_#fffdfb_0%,_#f7f3ee_34%,_#f2eee9_100%)] text-[#4F2A32] antialiased dark:bg-[radial-gradient(circle_at_top,_#2e3036_0%,_#23262b_30%,_#1d2026_100%)] dark:text-ivory">
     <header class="sticky top-0 z-30 px-4 pt-4 sm:px-8">
         <nav class="mx-auto flex max-w-7xl flex-col items-start gap-3 rounded-full border border-white/75 bg-ivory/95 px-5 py-4 text-[#8C3540] shadow-[inset_2px_2px_5px_rgba(255,255,255,0.9),7px_8px_18px_rgba(140,53,64,0.15)] backdrop-blur-xl dark:border-[#A64B56] dark:bg-[#8C3540]/95 dark:text-ivory sm:flex-row sm:items-center">
           <a href="#home" class="flex items-center gap-3 text-lg font-black tracking-wide text-[#8C3540] dark:text-ivory">
@@ -62,17 +70,37 @@
             @Tharver
           </a>
           <ul class="flex w-full flex-wrap gap-x-4 gap-y-2 text-sm font-semibold sm:ml-auto sm:w-auto sm:flex-nowrap sm:gap-6">
+            <li><a href="#home" class="nav-link text-[#8C3540] hover:text-[#A77B19] dark:text-ivory dark:hover:text-[#E9B949]">Home</a></li>
+            <li><a href="#about" class="nav-link text-[#8C3540] hover:text-[#A77B19] dark:text-ivory dark:hover:text-[#E9B949]">About</a></li>
             <li><a href="#projects" class="nav-link text-[#8C3540] hover:text-[#A77B19] dark:text-ivory dark:hover:text-[#E9B949]">Projects</a></li>
             <li><a href="#services" class="nav-link text-[#8C3540] hover:text-[#A77B19] dark:text-ivory dark:hover:text-[#E9B949]">Services</a></li>
+            <li><a href="#approach" class="nav-link text-[#8C3540] hover:text-[#A77B19] dark:text-ivory dark:hover:text-[#E9B949]">Approach</a></li>
             <li><a href="#contact" class="nav-link text-[#8C3540] hover:text-[#A77B19] dark:text-ivory dark:hover:text-[#E9B949]">Contact</a></li>
           </ul>
-          <button id="toggle-dark" type="button" aria-label="Toggle dark mode" class="btn-primary px-5 py-2.5 sm:ml-4">Switch</button>
+          <div class="flex w-full gap-2 sm:ml-4 sm:w-auto">
+            <span id="theme-toggle-control" class="inline-flex">
+              <button id="toggle-dark" type="button" aria-label="Toggle light and dark mode" class="btn-soft gap-2 border-[#CBA45A]/60 px-4 py-2.5">
+                <svg class="h-5 w-5 shrink-0 text-[#A77B19] dark:text-[#E9B949]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+                </svg>
+                <span>Theme</span>
+              </button>
+            </span>
+            <button id="replay-intro" type="button" class="btn-soft gap-2 px-4 py-2.5" aria-label="Replay page intro">
+              <svg id="replay-intro-icon" class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 12a9 9 0 1 0 2.64-6.36L3 8"></path>
+                <path d="M3 3v5h5"></path>
+              </svg>
+              <span>Replay intro</span>
+            </button>
+          </div>
         </nav>
     </header>
 
     <main class="mx-auto max-w-7xl px-4 sm:px-8">
       <section id="home" class="relative isolate my-8 grid min-h-[500px] items-center overflow-hidden rounded-[2.5rem] border border-[#A64B56]/40 bg-[#8C3540] px-7 pb-12 pt-20 text-ivory shadow-[inset_3px_3px_8px_rgba(255,255,255,0.1),16px_18px_34px_rgba(92,35,43,0.25),-8px_-8px_24px_rgba(255,255,255,0.7)] dark:border-[#A64B56] dark:bg-[#742D37] sm:px-12 md:grid-cols-[1fr_0.8fr] lg:grid-cols-[1fr_0.85fr] lg:px-16">
-        <div class="absolute left-6 right-6 top-5 z-20 flex items-center justify-between rounded-full border border-ivory/20 bg-[#742D37]/65 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.16em] text-ivory/80 shadow-[inset_2px_2px_5px_rgba(92,35,43,0.2),inset_-2px_-2px_5px_rgba(255,255,255,0.08)] backdrop-blur-md sm:left-10 sm:right-10 sm:px-5">
+        <div id="hero-status" class="absolute left-6 right-6 top-5 z-20 flex items-center justify-between rounded-full border border-ivory/20 bg-[#742D37]/65 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.16em] text-ivory/80 shadow-[inset_2px_2px_5px_rgba(92,35,43,0.2),inset_-2px_-2px_5px_rgba(255,255,255,0.08)] backdrop-blur-md sm:left-10 sm:right-10 sm:px-5">
           <span class="flex items-center gap-2">
             <span class="flex gap-1" aria-hidden="true">
               <span class="h-1.5 w-1.5 rounded-full bg-[#E9B949]"></span>
@@ -84,17 +112,21 @@
           <span class="hidden items-center gap-2 text-[#E9B949] sm:flex"><span class="h-1.5 w-1.5 rounded-full bg-[#E9B949]"></span>Open for projects</span>
         </div>
         <div aria-hidden="true" class="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full border-[24px] border-[#A64B56]/70 shadow-[inset_10px_10px_22px_rgba(92,35,43,0.18),inset_-8px_-8px_18px_rgba(255,255,255,0.12)]"></div>
-        <div class="relative z-10">
-          <h1 class="text-6xl font-black leading-[0.92] tracking-[-0.06em] text-ivory sm:text-8xl">Tharver<span class="text-[#E9B949]">.</span></h1>
-          <p class="mt-6 max-w-xl text-lg leading-relaxed text-ivory/85 sm:text-xl">
-            I build websites, business systems, and AI automations that make work simpler.
+        <div id="hero-copy" class="relative z-10">
+          <h1 id="hero-name" class="w-full text-left text-6xl font-black leading-[0.92] tracking-[-0.06em] text-ivory sm:text-8xl">Tharver<span class="text-[#E9B949]">.</span></h1>
+          <p class="mt-6 max-w-xl text-left text-lg leading-relaxed text-ivory/85 sm:text-xl">
+            I design and build websites, business systems, and AI workflows that help people work with less friction and more clarity.
           </p>
           <div class="mt-8 flex flex-wrap gap-4">
             <a href="#projects" class="btn-accent">Explore my work</a>
             <a href="#contact" class="btn-soft">Contact me</a>
           </div>
+          <div class="mt-8 flex flex-wrap gap-3 text-sm text-ivory/80">
+            <span class="info-pill bg-white/8 text-ivory/80">Custom-built</span>
+            <span class="info-pill bg-white/8 text-ivory/80">Friendly support</span>
+          </div>
         </div>
-        <div aria-hidden="true" class="relative mx-auto mt-10 hidden h-64 w-64 items-center justify-center rounded-full border border-[#A64B56]/50 bg-[#8C3540] shadow-[inset_14px_14px_28px_rgba(92,35,43,0.28),inset_-10px_-10px_22px_rgba(255,255,255,0.12),12px_14px_26px_rgba(92,35,43,0.2)] dark:bg-[#742D37] md:flex lg:mt-0 lg:h-[340px] lg:w-[340px]">
+        <div id="hero-art" aria-hidden="true" class="relative mx-auto mt-10 hidden h-64 w-64 items-center justify-center rounded-full border border-[#A64B56]/50 bg-[#8C3540] shadow-[inset_14px_14px_28px_rgba(92,35,43,0.28),inset_-10px_-10px_22px_rgba(255,255,255,0.12),12px_14px_26px_rgba(92,35,43,0.2)] dark:bg-[#742D37] md:flex lg:mt-0 lg:h-[340px] lg:w-[340px]">
           <div class="absolute h-44 w-44 rounded-full border-[2px] border-[#E9B949]/50 shadow-[0_0_34px_rgba(233,185,73,0.16)] lg:h-56 lg:w-56"></div>
           <div class="absolute left-8 top-12 flex h-20 w-20 rotate-[-10deg] items-center justify-center rounded-[1.7rem] border border-ivory/80 bg-ivory shadow-[inset_4px_4px_9px_rgba(255,255,255,0.8),9px_11px_18px_rgba(92,35,43,0.3)]">
             <span class="text-3xl font-black text-[#8C3540]">&lt;/&gt;</span>
@@ -110,11 +142,27 @@
         </div>
       </section>
 
-      <div class="my-8 grid auto-rows-fr grid-cols-1 gap-6 py-4 lg:grid-cols-2 xl:grid-cols-3">
+      <section id="about" class="neu-card my-16 grid min-h-[420px] items-center gap-10 rounded-[2.5rem] p-8 sm:p-12 lg:grid-cols-[0.8fr_1.2fr] lg:p-16">
+        <div>
+          <span class="info-pill">A little about my work</span>
+          <h2 class="mt-5 text-5xl font-black leading-[0.95] tracking-tight text-[#8C3540] dark:text-ivory sm:text-6xl">Useful by design.<br><span class="text-[#CBA45A]">Built to last.</span></h2>
+        </div>
+        <div class="space-y-5 text-lg leading-relaxed">
+          <p>I’m interested in the space where thoughtful design meets practical technology. A website should feel clear to use a system should make everyday work easier, not add another layer of friction.</p>
+          <p>That’s the mindset I bring to web projects, business tools, and workflow automation: understand the need, keep the experience approachable, and make each part serve a purpose.</p>
+          <div class="soft-divider grid gap-4 pt-6 sm:grid-cols-3">
+            <div><span class="block text-2xl font-black text-[#8C3540] dark:text-ivory">Clear</span><span class="mt-1 block text-sm">Easy to understand</span></div>
+            <div><span class="block text-2xl font-black text-[#8C3540] dark:text-ivory">Practical</span><span class="mt-1 block text-sm">Made for real workflows</span></div>
+            <div><span class="block text-2xl font-black text-[#8C3540] dark:text-ivory">Human</span><span class="mt-1 block text-sm">Designed around people</span></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="my-8 grid grid-cols-1 gap-8 py-4">
         <section id="projects" class="neu-card">
           <h2 class="text-3xl font-bold text-red-900">My Projects</h2>
           <p class="mt-4 text-base leading-relaxed">A selection of websites and systems built to make information and everyday work easier to manage.</p>
-          <ul class="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
+          <ul class="mt-5 grid gap-3 sm:grid-cols-2">
             <li class="neu-detail">
               <h3 class="font-bold">Personal portfolio</h3>
               <p class="mt-1 text-sm leading-relaxed text-[#8C3540]/80 dark:text-ivory/80">A place to share my work, skills, and background.</p>
@@ -131,7 +179,7 @@
               <h3 class="font-bold">Startup website</h3>
               <p class="mt-1 text-sm leading-relaxed text-[#8C3540]/80 dark:text-ivory/80">An introduction to a new business, idea, or product.</p>
             </li>
-            <li class="neu-detail sm:col-span-2 xl:col-span-1">
+            <li class="neu-detail sm:col-span-2">
               <h3 class="font-bold">Compliance monitoring system</h3>
               <p class="mt-1 text-sm leading-relaxed text-[#8C3540]/80 dark:text-ivory/80">A way to keep requirements and their progress in view.</p>
             </li>
@@ -141,7 +189,7 @@
         <section id="services" class="neu-card">
           <h2 class="text-3xl font-bold text-red-900">Services</h2>
           <p class="mt-4 text-base leading-relaxed">Practical digital help, from shaping an idea to supporting the systems behind it.</p>
-          <ul class="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
+          <ul class="mt-5 grid gap-3 sm:grid-cols-2">
             <li class="neu-detail">
               <h3 class="font-bold">Website creation</h3>
               <p class="mt-1 text-sm leading-relaxed text-[#8C3540]/80 dark:text-ivory/80">Responsive websites shaped around your goals.</p>
@@ -171,7 +219,7 @@
 
         <section id="contact" class="neu-card">
           <h2 class="text-3xl font-bold text-red-900">Let's build together!</h2>
-          <form action="#" class="mt-5 space-y-3">
+          <form action="#" class="mt-5 max-w-3xl space-y-3">
             <label for="name" class="block font-semibold text-red-950">Name</label>
             <input type="text" id="name" name="name" required class="neu-field">
 
@@ -187,12 +235,119 @@
           </form>
         </section>
       </div>
+
+      <section id="approach" class="my-16 rounded-[2.5rem] border border-[#A64B56]/40 bg-[#8C3540] p-8 text-ivory shadow-[inset_3px_3px_8px_rgba(255,255,255,0.1),16px_18px_34px_rgba(92,35,43,0.2)] sm:p-12 lg:p-16 dark:bg-[#742D37]">
+        <div class="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+          <div>
+            <span class="info-pill border-ivory/30 bg-ivory/10 text-ivory">From first thought to finished work</span>
+            <h2 class="mt-5 text-5xl font-black leading-[0.95] tracking-tight sm:text-6xl">A simple path.<br><span class="text-[#E9B949]">A better result.</span></h2>
+          </div>
+          <p class="max-w-2xl text-lg leading-relaxed text-ivory/80">Good work starts with listening and gets better through thoughtful iteration. Here’s how I approach a project, from the first conversation to the final details.</p>
+        </div>
+        <ol class="mt-12 grid gap-4 md:grid-cols-3">
+          <li class="rounded-[1.75rem] border border-ivory/15 bg-[#742D37]/55 p-6 shadow-[inset_2px_2px_5px_rgba(255,255,255,0.06)]">
+            <span class="text-5xl font-black text-[#E9B949]">01</span>
+            <h3 class="mt-6 text-2xl font-bold">Understand</h3>
+            <p class="mt-3 leading-relaxed text-ivory/80">Start with the goals, the people using it, and the parts that need to work better.</p>
+          </li>
+          <li class="rounded-[1.75rem] border border-ivory/15 bg-[#742D37]/55 p-6 shadow-[inset_2px_2px_5px_rgba(255,255,255,0.06)]">
+            <span class="text-5xl font-black text-[#E9B949]">02</span>
+            <h3 class="mt-6 text-2xl font-bold">Create</h3>
+            <p class="mt-3 leading-relaxed text-ivory/80">Shape a clear solution, then build the design and functionality around its purpose.</p>
+          </li>
+          <li class="rounded-[1.75rem] border border-ivory/15 bg-[#742D37]/55 p-6 shadow-[inset_2px_2px_5px_rgba(255,255,255,0.06)]">
+            <span class="text-5xl font-black text-[#E9B949]">03</span>
+            <h3 class="mt-6 text-2xl font-bold">Refine</h3>
+            <p class="mt-3 leading-relaxed text-ivory/80">Review the details, improve the experience, and prepare the work for everyday use.</p>
+          </li>
+        </ol>
+      </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script>
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.utils.toArray(".neu-card").forEach((card) => {
+        gsap.from(card, {
+          y: 60,
+          opacity: 0,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: card,
+            start: "top 85%",
+            toggleActions: "play none none reverse"
+          }
+        });
+      });
+
+      // 1. Tween
+      // gsap.from("#hero-name", { y: -100, opacity: 0, duration: 1, ease: "bounce.out" });
+      // gsap.from("#hero-name", { x: -150, opacity: 0, duration: 1, ease: "power2.out" });
+      // gsap.from("#hero-name", { x: -100, y: -60, rotation: -20, opacity: 0, duration: 1.2, ease: "back.out(2.5)" });
+
+      // 2. Easing
+      // gsap.from("h1", { y: -60,capacity:0 duration: 1 });
+      //ease: "power2.out"});
+      //ease: "back.out(2.5)"});
+      //ease: "bounce.out"}); 
+      //ease: "elastic.out"(1, 0.5)"});
+      
+      // 3. Stagger
+      // gsap.from("nav a", { y: -20, opacity: 0, duration: 0.5, ease: "power2.out", stagger: 0.5 });
+
+      // 4. Timeline
+      const playIntro = () => {
+        const intro = gsap.timeline({ defaults: { duration: 0.4, ease: "bounce.out" } });
+        intro.from("nav a", { y: -60, duration: 0.35, stagger: 0.035 })
+          .fromTo("#hero-status, #hero-copy > *:not(#hero-name), #hero-art", {
+            y: -100,
+            opacity: 0
+          }, {
+            y: 0,
+            opacity: 1,
+            duration: 0.55,
+            ease: "bounce.out",
+            stagger: 0.05
+          })
+          .fromTo("#hero-name", {
+            x: -40,
+            y: -100,
+            opacity: 0
+          }, {
+            x: 0,
+            y: 0,
+            opacity: 1,
+            duration: 0.75,
+            ease: "bounce.out"
+          }, "<")
+          .fromTo("#about .info-pill, #about h2, #projects h2, #services h2, #contact h2, #approach .info-pill, #approach h2", {
+            y: -120,
+            opacity: 0
+          }, {
+            y: 0,
+            opacity: 1,
+            duration: 0.45,
+            ease: "bounce.out",
+            stagger: 0.07
+          });
+        return intro;
+      };
+      const introTimeline = playIntro();
+      document.querySelector("#replay-intro").addEventListener("click", function () {
+        introTimeline.restart();
+        gsap.timeline({ defaults: { overwrite: "auto" } })
+          .to("#replay-intro-icon", { rotation: "+=360", duration: 0.6, ease: "power2.inOut" }, 0)
+          .to("#replay-intro-icon", { y: -4, scale: 1.2, duration: 0.16, ease: "power2.out" }, 0)
+          .to("#replay-intro-icon", { y: 0, scale: 1, duration: 0.45, ease: "bounce.out" }, 0.16);
+      });
+
       const button = document.querySelector("#toggle-dark");
+      const themeToggleControl = document.querySelector("#theme-toggle-control");
       button.addEventListener("click", function () {
         document.querySelector("html").classList.toggle("dark");
+        gsap.to(themeToggleControl, { rotation: "+=360", duration: 0.6, ease: "power2.inOut" });
       });
     </script>
   </body>
